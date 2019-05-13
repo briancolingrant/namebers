@@ -1,0 +1,46 @@
+{% extends 'main.twig' %}
+
+{% block title %}
+  Namebers
+{% endblock title %}
+{% block metadescription %}
+  Brian C Grant. Designer, Developer, Problem Solver.
+{% endblock metadescription %}
+{% block head %}
+  {% include 'head.twig' %}
+{% endblock head %}
+{% block content %}
+  <div class="content container-fluid header-padding p-0">
+    <div class="row">
+      <div id="form-messages" class="col"></div>
+    </div>
+    <div class="row d-flex justify-content-center position-relative p-2 p-md-5 no-gutters">
+      <canvas id="namebers_form_background"></canvas>
+      <div class="col-12 text-center">
+          <h1 class="mb-5 mt-4 font-weight-bold page-title"><strong>NAMEBERS</strong></h1>
+      </div>
+      <div class="nameber-form-card col-sm-12 col-md-8 col-lg-4 col-xl-4 p-4">
+        <form id="namebers" class="md-form form-dark text-center" method="post" action="/scripts/namebers.php">
+          <div class="form-group">
+              <label for="name" class="text-white">Your Name</label>
+              <input class="form-control form-control-lg text-white" type="text" id="name" name="name" required>
+              <small id="nameHelp" class="form-text text-white font-small">This information is never saved.</small>
+          </div>
+          <button type="submit" class="btn btn-primary">Make Me a Number!</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div id="form-results" class="col px-0 px-sm-4"></div>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block pagescripts %}
+  <script type="text/javascript" src="/js/namebers.js"></script>
+  <script type="text/babel" src="/js/React/components/NameberCard.js.jsx"></script>
+  <script type="text/javascript" src="/js/numbers_animation.js"></script>
+  <script type="text/javascript">
+    numberAnimation("namebers_form_background", "#00A9CE", 28);
+  </script>
+{% endblock pagescripts %}

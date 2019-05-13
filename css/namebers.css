@@ -1,0 +1,27 @@
+#namebers_form_background {
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+.nameber-form-card {
+    background: rgb(0,120,148);
+    background: linear-gradient(3235deg, rgba(0,120,148,1) 0%, rgba(0,169,206,1) 100%);
+    transform-style: preserve-3d;
+}
+
+.nameber-form-card .btn-outline-primary {
+  border-color: white;
+  color: white;
+}
+
+.page-title {
+  color: #00A9CE;
+text-shadow: 1px 1px 1px #007894, 1px 2px 1px #007894, 1px 3px 1px #007894, 1px 4px 1px #007894, 1px 5px 1px #007894, 1px 6px 1px #007894, 1px 7px 1px #007894, 1px 8px 1px #007894, 1px 9px 1px #007894, 1px 10px 1px #007894, 1px 18px 6px rgba(16,16,16,0.4), 1px 22px 10px rgba(16,16,16,0.2), 1px 25px 35px rgba(16,16,16,0.2), 1px 30px 60px rgba(16,16,16,0.4);
+}
+
+@media (max-width: 767px) {
+  .page-title {
+    font-size: 2rem;
+  }
+}
