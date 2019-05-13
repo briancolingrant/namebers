@@ -1,4 +1,4 @@
-{% extends 'main.twig' %}
+{% extends '/templates/main.twig' %}
 
 {% block title %}
   Namebers
@@ -37,9 +37,9 @@
 {% endblock content %}
 
 {% block pagescripts %}
-  <script type="text/javascript" src="/js/namebers.js"></script>
-  <script type="text/babel" src="/js/React/components/NameberCard.js.jsx"></script>
-  <script type="text/javascript" src="/js/numbers_animation.js"></script>
+  <script type="text/javascript" src="../js/namebers.js"></script>
+  <script type="text/babel" src="../js/React/components/NameberCard.js.jsx"></script>
+  <script type="text/javascript" src="../js/numbers_animation.js"></script>
   <script type="text/javascript">
     numberAnimation("namebers_form_background", "#00A9CE", 28);
   </script>
