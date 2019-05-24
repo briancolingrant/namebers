@@ -56,4 +56,6 @@ function numberAnimation(canvasId, foregroundHex, fontSize = 28) {
     clearTimeout(timer);
     timer = setTimeout(updateNamebersCanvas, 100);  // adjust time to liking
   });
+
+  return canvas;
 }

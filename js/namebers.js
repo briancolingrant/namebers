@@ -44,12 +44,12 @@ $( function() {
 
     function App() {
       var deck = React.createElement("div", {className: "card-deck"},
-        React.createElement(Nameber_Card, {title: "Hexadecimal", body: nameber.numbers.arabic.base["16"].string}),
-        React.createElement(Nameber_Card, {title: "Decimal", body: nameber.numbers.arabic.base["10"].string}),
-        React.createElement(Nameber_Card, {title: "Octal", body: nameber.numbers.arabic.base["8"].string}),
-        React.createElement(Nameber_Card, {title: "Binary", body: nameber.numbers.arabic.base["2"].string}),
-        React.createElement(Nameber_Card, {title: "Vigesimal", body: nameber.numbers.arabic.base["20"].string}),
-        React.createElement(Nameber_Card, {title: "Roman", body: nameber.numbers.roman.string})
+        React.createElement(BootstrapCard, {title: "Hexadecimal", body: nameber.numbers.arabic.base["16"].string}),
+        React.createElement(BootstrapCard, {title: "Decimal", body: nameber.numbers.arabic.base["10"].string}),
+        React.createElement(BootstrapCard, {title: "Octal", body: nameber.numbers.arabic.base["8"].string}),
+        React.createElement(BootstrapCard, {title: "Binary", body: nameber.numbers.arabic.base["2"].string}),
+        React.createElement(BootstrapCard, {title: "Vigesimal", body: nameber.numbers.arabic.base["20"].string}),
+        React.createElement(BootstrapCard, {title: "Roman", body: nameber.numbers.roman.string})
       );
       return ( React.createElement("div", null, deck) );
     }

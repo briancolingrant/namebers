@@ -1,4 +1,4 @@
-class Nameber_Card extends React.Component {
+class BootstrapCard extends React.Component {
   render() {
     return (
       <div className="col-sm-6 col-md-4 col-lg-3 col-xl-5ths">

@@ -1,4 +1,4 @@
-{% extends 'main.twig' %}
+{% extends 'page.twig' %}
 
 {% block title %}
   Namebers
@@ -10,7 +10,7 @@
   {% include 'head.twig' %}
 {% endblock head %}
 {% block content %}
-  <div class="content container-fluid header-padding p-0">
+  <div class="container-fluid p-0">
     <div class="row">
       <div id="form-messages" class="col"></div>
     </div>
@@ -31,16 +31,16 @@
       </div>
     </div>
     <div class="row">
-      <div id="form-results" class="col px-0 px-sm-4"></div>
+      <div id="form-results" class="col px-4"></div>
     </div>
   </div>
 {% endblock content %}
 
-{% block pagescripts %}
+{% block page_scripts %}
+  <script type="text/babel" src="/projects/namebers/js/React/components/BootstrapCard.js.jsx"></script>
   <script type="text/javascript" src="/projects/namebers/js/namebers.js"></script>
-  <script type="text/babel" src="/projects/namebers/js/React/components/NameberCard.js.jsx"></script>
   <script type="text/javascript" src="projects/namebers/js/numbers_animation.js"></script>
   <script type="text/javascript">
-    numberAnimation("namebers_form_background", "#00A9CE", 28);
+    var numberCanvas = numberAnimation("namebers_form_background", "#00A9CE", 28);
   </script>
-{% endblock pagescripts %}
+{% endblock page_scripts %}
